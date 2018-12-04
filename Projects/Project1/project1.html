@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="author" content="Andy Nguyen">
+<meta name="webpage" content=" Andy's webpage">
+<meta charset="utf-8">
+<title> Andy's new website </title>
+
+<style>
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content{
+    display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        border: solid;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0 px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+
+        
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+
+    p{
+    border: none;
+    color: red;
+    
+}
+    
+</style>
+
+    
+
+    
+    
+</head>
+<body>
+<h1> First Project: Hello World</h1>
+
+<canvas id="myCanvas" width="600" height="500" style="border:3px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas>
+    <script type="text/javascript" src="project1_script.js"></script> <!-- Important!! You must put the script in the body section for it to work!!!-->
+
+<br>
+<div class="dropdown">
+<span> Point your Mouse over me</span>
+<div class="dropdown-content">
+<p> Hello World!</p>        
+</div>
+    </div>
+    
+    <p><strong>Note: The canvas tag is not supported in Internet Explorer 8 and earlier versions.</p>
+<!-- Do this one later
+<form action="projects.php" method="get">
+    X:
+    <input type="text" name="xcoord"><br>
+    Y:
+    <input type="text" name="ycoord"><br>
+    <input type ="submit" value= "Move da Circle!!">
+</form>
+!-->
+</body>
+</html>
